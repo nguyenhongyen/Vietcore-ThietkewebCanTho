@@ -4047,6 +4047,18 @@ textarea:focus {
         left: 89px;
         height: 234px;
     }
+    .line-image__wrap .circle::before{
+        position: absolute;
+        content: '';
+        width: 18px;
+        height: 18px;
+        left: -6px;
+        top:-6px;
+        border-radius: 50%;
+        background-color: red;
+        opacity: 0;
+
+    }
 
     .line-image-1 .circle {
         bottom: 86px;
