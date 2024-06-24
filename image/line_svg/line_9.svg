@@ -1,0 +1,17 @@
+<svg width="226" height="302" viewBox="0 0 226 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+      .line-animation {
+        fill: none;
+        stroke: #00355d;
+        fill-rule: evenodd;
+        stroke-dashoffset: -1000;
+                animation: dash 50s infinite linear;
+      }
+      @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+    </style>
+<path class="line-animation" d="M1 20.494C22.8355 8.08604 48.0902 1 75 1C157.843 1 225 68.1573 225 151C225 233.843 157.843 301 75 301C71.8091 301 68.6414 300.9 65.5 300.704" stroke="black" stroke-width="1.75" stroke-dasharray="5 5"/>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.41384in" height="6.20452in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2314.36 5948.8"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.61313;stroke-dasharray:79.896212 159.792425}
+    .fil0 {fill:none}
+   ]]>
+    .cls-1 {
+        fill: none;
+        stroke: #00355d;
+        stroke-width: 15px;
+        stroke-dasharray: 50 50;
+        fill-rule: evenodd;
+        stroke-dashoffset: 1000;
+                animation: dash 3s infinite linear;
+      }
+      @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="cls-1 fil0 str0" d="M2265.97 5928.83c-3701.36,-1269.54 -2207.25,-5634.11 48.38,-5918.65"/>
+ </g>
+</svg>

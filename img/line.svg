@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106.44" height="321.062" viewBox="0 0 106.44 321.062">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #00355d;
+        stroke-width: 1px;
+        stroke-dasharray: 4 2;
+        fill-rule: evenodd;
+        stroke-dashoffset: 1000;
+                animation: dash 50s infinite linear;
+      }
+      @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1253,343s-55.06,26.312-63,116,49.94,173.312,105,203" transform="translate(-1187.75 -341.594)"/>
+</svg>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Công Ty Cổ Phần Giải Pháp Công Nghệ Vietcore</title>
+	<meta name="description"
+	      content="Vietcore JSC - Công Ty Cổ Phần Giải Pháp Công Nghệ Vietcore - Ứng dụng công nghệ số vào hoạt động kinh doanh của doanh nghiệp.">
+	<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="https://vietcore.com.vn/view/vietcore/assets/css/bundle.css?ver=10">
+	
+	<!-----------Thư viện--------->
+	
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+	<link rel="stylesheet" href="libs/aos/aos.css">
+	<link rel="stylesheet" href="fonts/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900;1000&display=swap"
+	      rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/map.css">
+
+</head>
+<body>
+<header class=" header-navbar" id="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="nav-contact d-lg-flex justify-content-between align-items-center">
+						<div class="grid-left d-flex justify-content-center justify-content-lg-between align-items-center">
+							<div class="c-phone">
+								<a href="tel:0912902951">
+									<i class="fas fa-mobile"></i>
+									0912.902.951 </a>
+							</div>
+							<div class="c-phone">
+								<a href="tel:02926533323">
+									<i class="fas fa-phone-alt"></i>
+									02926.533.323 </a>
+							</div>
+							<div class="c-mail">
+								<a href="mailto:info@vietcore.com.vn">
+									<i class="fas fa-envelope"></i>
+									info@vietcore.com.vn </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<ul class="d-flex align-items-center justify-content-end header-social">
+						<li class="facebook">
+							<a target="_blank" href="https://www.facebook.com/vietcore">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="zalo">
+							<a target="_blank" href="https://zalo.me/0912902951">
+								<img src="https://vietcore.com.vn/view/vietcore/assets/images/icon/zalo-icon-new.png">
+							</a>
+						</li>
+						<li class="google">
+							<a target="_blank" href="https://g.page/vietcore?share">
+								<i class="fa fa-map-marker-alt"></i>
+							</a>
+						</li>
+						<li class="youtube">
+							<a target="_blank" href="">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+						<li class="language">
+							<a data-id="1" href="javascript: void(0)">
+								<span><img src="/public/upload/images/icon/vietnam.svg"></span>
+								Tiếng Việt <i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="sublanguage">
+								<li>
+									<a class="changelang" data-id="2" href="javascript:void(0)">
+										<span>
+											<img src="https://vietcore.com.vn//public/upload/images/icon/english.svg"
+											     alt="English">
+										</span>
+										English </a>
+								</li>
+								<li>
+									<a class="changelang" data-id="1" href="javascript:void(0)">
+										<span>
+											<img src="https://vietcore.com.vn//public/upload/images/icon/vietnam.svg"
+											     alt="Tiếng Việt">
+										</span>
+										Tiếng Việt </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="icon-mobile d-lg-none d-block" data-target="#modalContactAgency" data-toggle="modal"
+					     id="mobileInfo"><i class="fas fa-envelope"></i></div>
+					<div class="grid-logo custom-logo">
+						<a href="https://vietcore.com.vn/">
+							<h1>
+								<img src="https://vietcore.com.vn/public/upload/logo/logo-vietcore.png">
+							</h1>
+						</a>
+					</div>
+					<div id="humburger" class="humburger"><span></span></div>
+				</div>
+				<div class="col-lg-10">
+					<div class="nav-categories d-lg-flex align-items-end justify-content-end">
+						<nav class="grid-nav">
+							<ul class="list-unstyled pl-0" id="navigation">
+								<li class="logo-mobile d-block d-lg-none">
+									<a href="https://vietcore.com.vn/">
+										<img src="https://vietcore.com.vn/public/upload/logo/logo-vietcore.png">
+									</a>
+								</li>
+								<li>
+									<a href="/">TRANG CHỦ</a>
+								</li>
+								<li>
+									<a href="/gioi-thieu-vietcore">Giới Thiệu</a>
+								</li>
+								<li>
+									<a href="#parent2" data-toggle="collapse">Dịch Vụ</a>
+									<ul id="parent2" class="collapse list-unstyled pl-0" data-parent="#navigation">
+										<li>
+											<a href="/thiet-ke-web">Thiết Kế Website</a>
+										</li>
+										<li>
+											<a href="/digital-marketing">Digital Marketing</a>
+										</li>
+										<li>
+											<a href="/thiet-ke-nhan-dien-thuong-hieu">Thiết Kế Nhận Diện Thương Hiệu</a>
+										</li>
+										<li>
+											<a href="/truyen-thong-da-phuong-tien">Mỹ Thuật Đa Phương Tiện</a>
+										</li>
+										<li>
+											<a href="/thiet-ke-ung-dung-di-dong">Thiết Kế Ứng Dụng Di Động</a>
+										</li>
+										<li>
+											<a href="https://vietcore.com.vn/cung-ung-nhan-luc-can-tho-headhunter	">Cung
+												Ứng Nhân Lực</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#parent3" data-toggle="collapse">Bảng giá</a>
+									<ul id="parent3" class="collapse list-unstyled pl-0" data-parent="#navigation">
+										<li>
+											<a href="/bang-gia-thiet-ke-website-doanh-nghiep">Thiết kế web doanh
+												nghiệp</a>
+										</li>
+										<li>
+											<a href="/bang-gia-thiet-ke-website-ban-hang">Thiết kế web bán hàng</a>
+										</li>
+										<li>
+											<a href="/thiet-ke-web-oto">Thiết Kế Web Ô Tô</a>
+										</li>
+										<li>
+											<a href="/bang-gia-thiet-ke-website-thuong-mai-dien-tu">Thiết kế web sàn
+												TMĐT</a>
+										</li>
+										<li>
+											<a href="/bang-gia-thiet-ke-bo-nhan-dien-thuong-hieu">Thiết kế thương
+												hiệu</a>
+										</li>
+										<li>
+											<a href="/bang-gia-hosting">Hosting SSD</a>
+										</li>
+										<li>
+											<a href="/bang-gia-ten-mien">Đăng ký tên miền</a>
+										</li>
+										<li>
+											<a href="/bang-gia-mail-server">Email Server</a>
+										</li>
+										<li>
+											<a href="/dich-vu-quan-tri-website">Quản trị website</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="/mau-website">DỰ ÁN ĐÃ LÀM</a>
+								</li>
+								<li>
+									<a href="#parent5" data-toggle="collapse">TIN TỨC</a>
+									<ul id="parent5" class="collapse list-unstyled pl-0" data-parent="#navigation">
+										<li>
+											<a href="/kien-thuc-can-biet">Kiến Thức</a>
+										</li>
+										<li>
+											<a href="/cac-hoat-dong">Các Hoạt Động</a>
+										</li>
+										<li>
+											<a href="https://vietcore.com.vn/tuyen-dung">Tuyển Dụng</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="/lienhe">Liên hệ</a>
+								</li>
+								<li class="d-block d-lg-none">
+									<a class="changelang" data-id="2" href="javascript: void(0)">
+										<img src="/public/upload/images/icon/english.svg">
+										English </a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-lg-12 d-lg-none d-block">
+					<div class="mobile-info" data-target="mobileInfo">
+						<div class="d-flex align-items-center justify-content-start">
+							<div class="c-phone">
+								<a href="tel:0912.902.951">
+									<i class="fas fa-mobile"></i>
+									0912.902.951 </a>
+							</div>
+							<div class="c-phone">
+								<a href="tel:02926.533.323">
+									<i class="fas fa-phone-alt"></i>
+									02926.533.323 </a>
+							</div>
+							<div class="c-mail">
+								<a href="mailto:info@vietcore.com.vn">
+									<i class="fas fa-envelope"></i>
+									info@vietcore.com.vn </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</header>
+<!------end header------>
+<main class="wrapper-main">
+	<section class="section-counselors">
+		<div class="container">
+			<div class="section-counselors__wrap">
+				<div class="section-counselors__left ">
+					<div class="section-counselors__logo">
+						<span>
+							<img src="img/vietcore-logo.png" height="21"
+							     width="21" alt="Logo thiết kế Vietcore">
+						</span>
+						<span>Chuyên gia của vietcore</span>
+					</div>
+					<div class="section-heading">
+						<h2 class="title-heading">
+							Thiết kế Website ngay hôm nay!<br>
+							Để vietcore được tư vấn cho <span class="text-color-2">Bạn</span>
+						</h2>
+						<div class="sub-heading">
+							Xây dựng Website, bắt đầu xuất hiện trên không gian mạng, phát triển hành trình tiếp thị
+							trong kỷ nguyên số.
+						</div>
+					</div>
+					<div class="section-counselors__button">
+						<a rel="nofollow" href="tel:0912902951" class="hotline button-contact "
+						   aria-label="Gọi 0912-902-951">
+							<span class="icon">
+								<img src="img/hotline.svg" width="25"
+								     height="25" alt="Liên hệ tư vấn thiết kế Web qua Hotline"
+								     title="Liên hệ tư vấn thiết kế Web qua Hotline">
+							</span>
+							<span class="content">
+								<span class="title">Gọi 0912-902-951</span>
+								<span>Thứ Hai - Thứ Bảy, 08:00 Sáng - 17:30 Chiều</span>
+							</span>
+						</a>
+						<a rel="nofollow" href="https://zalo.me/0912902951" class="zalo button-contact"
+						   aria-label="Tư vấn qua Zalo" target="_blank">
+							<span class="icon">
+								<img src="img/zalo-svg.svg" width="40"
+								     height="40" alt="Liên hệ tư vấn thiết kế Web qua Zalo"
+								     title="Liên hệ tư vấn thiết kế Web qua Zalo">
+							</span>
+							<span class="content">
+								<span class="title">Tư vấn qua Zalo</span>
+								<span>Sẵn sàng hỗ trợ tư vấn Bạn</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="section-counselors__right">
+					<img src=".img/lien-he-thiet-ke-web-can-tho-vietcore.png"
+					     height="518" width="367" alt="liên hệ công ty thiết kế website Cần Thơ - Vietcore"
+					     title="liên hệ công ty thiết kế website Cần Thơ - Vietcore">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-map overflow-hidden section-gap">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-xl-4 col-lg-12">
+					<div class="section-heading text-start">
+						<h2 class="title-heading">
+							Vì Website là <span class="text-color-2">không giới hạn</span> địa lý<br>
+							Không biên giới - khoảng cách
+						</h2>
+						<div class="sub-heading">
+							Dù bạn ở bất kỳ nơi đâu, vietcore luôn sẵn sàng cung cấp dịch vụ một cách trọn vẹn.
+						</div>
+					</div>
+					<div class="section-map__animation position-relative d-flex align-items-start">
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+						<div class="item-partner">
+							<span class="item-partner__image">
+								<img src="img/thiet-ke-web-can-tho-client-caseamex-can-tho.jpg"
+								     width="225"
+								     height="75" class="w-100 h-100 object-fit-contain" alt="">
+							</span>
+							<a href="#" target="_blank" aria-label="" class="item-title">
+								casemex.com
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-5 col-lg-12">
+					<div class="map-image__wrap  position-relative text-center">
+						<div class="map-image__img">
+							<img src="image/line_svg/map2-vietcore.jpg" width="987" height="781"
+							     class="w-100 h-100 object-fit-cover image-pc" alt="Bản đồ Việt Nam">
+							<img src="image/line_svg/map2-vietcore%20-mobile.jpg" width="616" height="781"
+							     class="w-100 h-100 object-fit-cover image-mobile" alt="Bản đồ Việt Nam">
+						</div>
+						<div class="map-image__line d-md-flex d-none ">
+							<div class="line-image-1">
+								<img src="image/line_svg/line_1.svg" width="55" height="3"
+								     class="position-absolute line-1" alt="Line map">
+								<div class="line-image__wrap">
+									<div class="circle position-relative"></div>
+								</div>
+							</div>
+							<img src="image/line_svg/line_2.svg" width="38" height="10" class="position-absolute line-2"
+							     alt="Line map">
+							<img src="image/line_svg/line_3.svg" width="30" height="16" class="position-absolute line-3"
+							     alt="Line map">
+							<img src="image/line_svg/line_4.svg" width="38" height="10" class="position-absolute line-4"
+							     alt="Line map">
+							<div class="line-image-5">
+								<img src="image/line_svg/line_3.svg" width="30" height="16"
+								     class="position-absolute line-5"
+								     alt="Line map">
+								<div class="line-image__wrap">
+									<div class="circle position-relative"></div>
+								</div>
+							</div>
+							<div class="line-image-6">
+								<img src="image/line_svg/line_6.svg" width="121" height="355"
+								     class="position-absolute line-6" alt="Line map">
+								<div class="line-image__wrap">
+									<div class="circle position-relative"></div>
+								</div>
+							</div>
+							<div class="line-image-7">
+								<img src="image/line_svg/line_7.svg" width="63" height="269"
+								     class="position-absolute line-7" alt="Line map">
+								<div class="line-image__wrap">
+									<div class="circle position-relative"></div>
+								</div>
+							</div>
+							<div class="line-image-8">
+								<img src="image/line_svg/line_8.svg" width="89" height="182"
+								     class="position-absolute line-8" alt="Line map">
+								<div class="line-image__wrap">
+									<div class="circle position-relative"></div>
+								</div>
+							</div>
+							<div class="line-image-9">
+								<img src="image/line_svg/line_9.svg" width="280" height="300"
+								     class="position-absolute line-9" alt="Line map">
+								<div class="line-image__wrap">
+									<div class="circle position-relative"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+<!-------end main----->
+<div class="modal fade modal-register" id="registerWebsite" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<button class="modal-register__close" data-bs-dismiss="modal">
+				<i class="fal fa-times"></i>
+			</button>
+			<div class="modal-register__header">
+				<img src="" id="frm-lp_image" width="400" height="120" alt="Hình ảnh">
+			</div>
+			<div class="modal-register__body">
+				<form action="" id="contactLandingPage">
+					<div class="form-group ">
+						<label class="form-group__label">Tên của bạn:</label>
+						<div class="position-relative">
+							<div class="form-group__icon"><i class="fas fa-user"></i></div>
+							<input type="text" placeholder="Tên của bạn là..." id="frm-lp_name" name="frm-lp_name"
+							       class="form-input">
+						</div>
+					
+					</div>
+					<div class="form-group ">
+						<label class="form-group__label">Số điện thoại:</label>
+						<div class="position-relative">
+							<div class="form-group__icon"><i class="fas fa-phone-alt"></i></div>
+							<input type="tel" minlength="10" maxlength="10" placeholder="Số điện thoại của bạn là..."
+							       name="frm-lp_phone" id="frm-lp_phone" class="form-input">
+						</div>
+					
+					</div>
+					<div class="form-group position-relative">
+						<label class="form-group__label">Bạn cần tư vấn gói:</label>
+						<div class="position-relative">
+							<div class="form-group__icon"><i class="fas fa-layer-group"></i></div>
+							<input type="text" name="frm-lp_message" id="frm-lp_message" class="form-input" value=""
+							       readonly>
+						</div>
+					
+					</div>
+					<div class="text-center">
+						<button type="submit" class="form-group__btn">
+							Đăng ký
+							<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
+							     fill="none">
+								<path d="M1 11L6 6L1 1" stroke="#ffff" stroke-linecap="round" stroke-linejoin="round">
+								</path>
+							</svg>
+						</button>
+					</div>
+				
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-------end main----->
+<div class="main main-footer pt-0">
+	<div class="container">
+		<div class="main-f-top">
+			<div class="row">
+				<div class="col-12 col-lg-6 col-md-12 mb-5">
+					<h3 class="f-shop">GIẢI PHÁP SỐ TOÀN DIỆN CHO DOANH NGHIỆP</h3>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+							<ul class="list-unstyled">
+								<li style="margin-bottom: 10px;">
+									<a title="Digital marketing" href="https://vietcore.com.vn/digital-marketing">
+										Digital marketing </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế nhận diện thương hiệu"
+									   href="https://vietcore.com.vn/thiet-ke-nhan-dien-thuong-hieu">
+										Thiết kế nhận diện thương hiệu </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế media" href="https://vietcore.com.vn/multimedia">
+										Thiết kế media </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Sàn Giao dịch Việc Làm" href="/san-giao-dich-viec-lam">
+										Sàn Giao dịch Việc Làm </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế ứng dụng di động"
+									   href="https://vietcore.com.vn/thiet-ke-ung-dung-di-dong">
+										Thiết kế ứng dụng di động </a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<ul class="list-unstyled">
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế website" href="https://vietcore.com.vn/thiet-ke-web">
+										Thiết kế website </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết Kế Web Ô Tô" href="/thiet-ke-web-oto">
+										Thiết Kế Web Ô Tô </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế web Cần Thơ" href="https://vietcore.com.vn/thiet-ke-web-can-tho">
+										Thiết kế web Cần Thơ </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế web tại Đà Nẵng"
+									   href="https://vietcore.com.vn/thiet-ke-web-da-nang">
+										Thiết kế web tại Đà Nẵng </a>
+								</li>
+								<li style="margin-bottom: 10px;">
+									<a title="Thiết kế web tại TP.HCM" href="/thiet-ke-web-hcm">
+										Thiết kế web tại TP.HCM </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-6 mb-5">
+					<h3 class="f-shop">GIỚI THIỆU</h3>
+					<ul class="list-unstyled">
+						<li style="margin-bottom: 10px;">
+							<a title="Giới thiệu " href="/gioi-thieu-vietcore">
+								Giới thiệu </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Quy định chung" href="https://vietcore.com.vn/quy-dinh-chung-b64.html">
+								Quy định chung </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Chính sách bảo mật"
+							   href="https://vietcore.com.vn/chinh-sach-bao-mat-thong-tin-b31.html">
+								Chính sách bảo mật </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Câu hỏi thường gặp" href="https://vietcore.com.vn/faq-b65.html">
+								Câu hỏi thường gặp </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Dự án đã làm" href="/mau-website">
+								Dự án đã làm </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-3 col-md-6 mb-5">
+					<h3 class="f-shop">THÔNG TIN</h3>
+					<ul class="list-unstyled">
+						<li style="margin-bottom: 10px;">
+							<a title="Cty CP Giải Pháp Công Nghệ Vietcore" href="javascript:void(0)">
+								Cty CP Giải Pháp Công Nghệ Vietcore </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Số ĐKKD: 1801316399" href="javascript:void(0)">
+								Số ĐKKD: 1801316399 </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Cấp ngày: 12/09/2013 - nơi cấp: SKHĐT Cần Thơ" href="javascript:void(0)">
+								Cấp ngày: 12/09/2013 - nơi cấp: SKHĐT Cần Thơ </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Phòng kế toán: 02926.282.383" href="javascript:void(0)">
+								Phòng kế toán: 02926.282.383 </a>
+						</li>
+						<li style="margin-bottom: 10px;">
+							<a title="Phòng kinh doanh: 02926.533.323" href="javascript:void(0)">
+								Phòng kinh doanh: 02926.533.323 </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="new-f-bottom main-f-bottom text-center text-lg-left">
+			<div class="row">
+				<div class="col-md-4 mb-3 mb-lg-0">
+					<h3 class="f-shop">
+						Trụ sở chính - Cần Thơ
+					</h3>
+					<p class="f-address">
+						<span><i class="fa fa-map-marker-alt"></i></span> 202 Nguyễn Đệ, An Thới, Bình Thủy, Cần Thơ
+					</p>
+					<p class="f-contact">
+						<span><i class="fa fa-phone-alt"></i></span>
+						<a href="tel:0912902951" title="Hotline">0912.902.951</a>
+					</p>
+				</div>
+				<div class="col-md-4 mb-3 mb-lg-0">
+					<h3 class="f-shop">
+						Văn Phòng Đà Nẵng
+					</h3>
+					<p class="f-address">
+						<span><i class="fa fa-map-marker-alt"></i></span> 909 Ngô Quyền, An Hải Bắc, Sơn Trà, Đà Nẵng
+					</p>
+					<p class="f-contact">
+						<span><i class="fa fa-phone-alt"></i></span>
+						<a href="tel:0907818551" title="Hotline">0907.818.551</a>
+					</p>
+				</div>
+				<div class="col-md-4 mb-3 mb-lg-0">
+					<h3 class="f-shop">
+						Văn phòng TP. HCM
+					</h3>
+					<p class="f-address">
+						<span><i class="fa fa-map-marker-alt"></i></span> 220A Ung Văn Khiêm, Q.Bình Thạnh, TP.HCM
+					</p>
+					<p class="f-contact">
+						<span><i class="fa fa-phone-alt"></i></span>
+						<a href="tel:0945460087" title="Hotline">0945.460.087</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.js"></script>
+<script src="libs/swiper/swiper.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="js/3new-gioithieu.js"></script>
+
+</body>
+</html>
