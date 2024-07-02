@@ -435,16 +435,21 @@ window.onload = animateText;
 		}
 
 	}
-	const handleGetPontMap = function(a,b){
-
-	}
-
-
 
 	$(function () {
 		$(window).on("load", function () {
-			/*$(".section-loader-2").delay(2800).fadeOut(1900);*/
 			$(".section-loader-2").delay(2000).fadeOut(1000);
+
+			if($('body').hasClass('load-banner')){
+				$('body').removeClass('load-banner');
+			}else{
+				$('body').addClass('load-banner');
+			}
+
+			/*setTimeout(function () {
+				$('.introduce-us__bg-decor').addClass('hide');
+			}, 5000);*/
+
 		})
 		handleSwiperPriceList();
 		handleTabpriceList();
@@ -464,6 +469,7 @@ window.onload = animateText;
 })();
 
 
+/*
 
 $(document).ready(function() {
 	// ==============trương hợp vẽ bằng div css ====================
@@ -494,7 +500,7 @@ $(document).ready(function() {
 	const pairs = [
 		['#div1', '#div2'],
 		['#div4', '#div2'],
-		/*['#div3', '#div2'],*/
+		/!*['#div3', '#div2'],*!/
 	];
 
 	pairs.forEach(function(pair) {
@@ -502,7 +508,7 @@ $(document).ready(function() {
 	});
 
 
-	/*
+	/!*
 	// =========================Trường hợp 1 ============
 	const line = $('.line');
 	const startX = $('#div1')[0].offsetLeft;
@@ -515,10 +521,11 @@ $(document).ready(function() {
 		top: startY,
 		left: startX,
         height: distance,
-	});*/
+	});*!/
 
 
 
 
 });
 
+*/

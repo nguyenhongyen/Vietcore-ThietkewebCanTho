@@ -1,0 +1,1108 @@
+:root {
+    --bs-white: #ffff;
+    --bs-gray-100: rgb(243 244 246);
+    --bs-gray-200: rgb(229 231 235);
+    --bs-gray-300: rgb(209 213 219);
+    --bs-gray-400: rgb(156 163 175);
+    --bs-gray-500: rgb(107 114 128);
+    --bs-gray-600: rgb(75 85 99);
+    --bs-gray-700: rgb(55 65 81);
+    --bs-gray-800: rgb(31 41 55);
+    --bs-gray-900: rgb(17 24 39);
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-3 {
+    z-index: 3;
+}
+
+.z-index-4 {
+    z-index: 4;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.object-fit-contain {
+    object-fit: contain;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/*===================================
+      header-update
+===================================*/
+main {
+    margin-top: -105px;
+    padding-top: 0;
+
+}
+
+header {
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    transition: all 0.4s ease-in;
+}
+header.is-scroll{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    background: var(--base-color) !important;
+    border-bottom: 4px solid var(--base-color-2);
+}
+header.is-scroll .header-logo{
+    background-color: var(--base-color);
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top:-30px;
+    width: 120px;
+    height: 100px;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, .1));
+}
+header.is-scroll .header-logo img{
+width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header ul.header-top > li > a {
+    font-weight: bold;
+    color: var(--bs-white);
+    transition: var(--transition-default);
+    position: relative;
+    padding-right: 10px;
+}
+
+header ul.header-top > li > a:hover {
+    color: var(--base-color-2);
+}
+
+header ul.header-top > li {
+    padding: 0 10px;
+    position: relative;
+}
+
+header ul.header-top > li:not(:last-child)::after {
+    position: absolute;
+    content: '/';
+    right: 0;
+    color: var(--bs-white);
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+}
+
+.button-hamburger,
+.button-close .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px;
+}
+
+.button-hamburger > span {
+    width: 22px;
+    height: 2px;
+    background-color: var(--bs-white);
+}
+
+.button-close .icon > span {
+    width: 30px;
+    height: 2px;
+    background-color: var(--bs-white);
+}
+
+.button-close .icon span:nth-child(1) {
+    transform: rotate(-136deg) translateY(-4px);
+}
+
+.button-close .icon span:nth-child(2) {
+    transform: rotate(-225deg) translateY(3px);
+}
+
+.header-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(22 23 23 / 42%), rgb(32 33 34 / 0%));
+    backdrop-filter: blur(15px);
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.show-overlay .header-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 700px;
+    height: 100vh;
+    z-index: 20;
+    background-color: var(--primary-color);
+    padding: 50px 80px;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-nav .header-nav {
+    transition: all .6s ease-in-out;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-nav > ul {
+    padding: 50px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: 660px;
+}
+
+.header-nav > ul > li > a {
+    color: var(--bs-white);
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    gap: 30px;
+}
+
+.header-nav > ul > li {
+    width: 100%;
+}
+
+.header-nav > ul > li > a .number {
+    font-size: 13px;
+    width: 22px;
+}
+
+.header-nav > ul > li > a .title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header-nav > ul > li > a[aria-expanded="true"] {
+    color: var(--base-color-2);
+    font-weight: 700;
+}
+
+.header-nav > ul > li > ul {
+    padding-left: 20px;
+    margin: 12px 0 0 50px;
+    border-left: 1px solid var(--bs-gray-200);
+}
+
+.header-nav > ul > li > ul > li > a {
+    color: var(--bs-white);
+    transition: all 0.3s ease-in;
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+}
+
+.header-item__contact {
+    color: var(--bs-white);
+
+}
+
+.header-item__contact:last-child {
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+/*======================================
+        introduce-us
+=====================================*/
+
+.transition-text {
+    transition: 0.1s ease;
+}
+
+.introduce-us {
+    padding: 130px 0 70px 0;
+    position: relative;
+}
+.introduce-us__heading .heading-subtitle {
+    margin-left: 72px;
+}
+
+.introduce-us__heading {
+   opacity: 0;
+}
+
+.load-banner .introduce-us__heading {
+    transition-delay: 2.5s;
+   opacity: 1;
+}
+
+
+.introduce-us__heading .image-1 {
+    transition-delay: 2.6s;
+    opacity: 0;
+}
+
+.load-banner .introduce-us__heading .image-1 {
+    opacity: 1;
+    animation-name: text-in;
+    animation-timing-function: ease;
+    animation-duration: 1.1s;
+    animation-delay: 2s;
+
+}
+
+.introduce-us__heading .image-2 {
+    transition-delay: 2.8s;
+    opacity: 0;
+}
+.load-banner .introduce-us__heading .image-2 {
+    opacity: 1;
+    animation-name: text-in;
+    animation-timing-function: ease;
+    animation-duration: 1.1s;
+    animation-delay: 2.2s;
+}
+
+
+@keyframes text-in {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        animation-duration: 1s;
+    }
+    80%{
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.introduce-us__heading .image-3 {
+    transition-delay: 3s;
+    opacity: 0;
+}
+.load-banner .introduce-us__heading .image-3 {
+    opacity: 1;
+    animation-name: text-zoom;
+    animation-timing-function: ease;
+    animation-duration: 1.1s;
+    animation-delay: 2.8s;
+}
+
+
+.introduce-us__heading .image-4 {
+    transition-delay: 3.2s;
+    opacity: 0;
+}
+.load-banner .introduce-us__heading .image-4 {
+    opacity: 1;
+    animation-name: text-zoom;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 2.6s;
+}
+
+@keyframes text-zoom{
+    0%{
+        transform:scale(1);
+    }
+    90%{
+        transform:scale(1.08);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.introduce-us__heading .image-6 {
+    transition-delay: 3.2s;
+    opacity: 0;
+}
+
+.load-banner .introduce-us__heading .image-6 {
+    opacity: 1;
+    animation-name: text-right;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.1s;
+    animation-delay: 2.6s;
+}
+@keyframes text-right{
+
+    50%{
+        transform:translateX(-10px);
+    }
+    80%{
+        transform:translateX(30px);
+    }
+    100% {
+        transform:translateX(0px);
+    }
+}
+
+.introduce-us__heading .heading-desc {
+    margin-left: -50px;
+}
+
+.introduce--us__dot.dot-right {
+    position: absolute;
+    right: 0;
+    top: -140px;
+    width: 260px;
+    transform: rotate(90deg) translateX(-50px);
+    transition: all 0.7s ease-in;
+    z-index: 5;
+    transition-delay: 1.4s;
+}
+
+.load-banner .introduce--us__dot.dot-right {
+    transform: rotate(90deg) translateX(290px);
+}
+
+.introduce--us__dot.dot-bottom {
+    position: absolute;
+    left: 68px;
+    bottom: -12px;
+    width: 260px;
+    z-index: 5;
+    transition: all 0.7s ease-in;
+    transform: translateX(-200%);
+    transition-delay: 1.2s;
+}
+
+.load-banner .introduce--us__dot.dot-bottom {
+    transform: translateX(0);
+}
+
+.introduce--us__arrow.arrow-right {
+    position: absolute;
+    right: 33px;
+    bottom: -31px;
+    width: 170px;
+    height: 50px;
+    z-index: 2;
+}
+
+.introduce--us__arrow-left {
+    width: 200px;
+    height: 50px;
+}
+
+.introduce--us__arrow .arrow-item {
+    width: 28px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+
+}
+
+.introduce--us__arrow-left .arrow-item {
+    width: 28px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+.introduce--us__arrow .arrow-item:nth-child(1) {
+    right: -10px;
+}
+
+.introduce--us__arrow .arrow-item:nth-child(2) {
+    right: 25px;
+}
+
+.introduce--us__arrow .arrow-item:nth-child(3) {
+    right: 60px;
+}
+
+.introduce--us__arrow .arrow-item:nth-child(4) {
+    right: 90px;
+}
+
+.introduce--us__arrow .arrow-item:nth-child(5) {
+    right: 120px;
+}
+
+.load-banner .introduce--us__arrow .arrow-item:nth-child(1) {
+    opacity: 1;
+    right: 0;
+    transition-delay: 1.6s;
+}
+
+.load-banner .introduce--us__arrow .arrow-item:nth-child(2) {
+    opacity: 1;
+    right: 35px;
+    transition-delay: 1.7s;
+}
+
+.load-banner .introduce--us__arrow .arrow-item:nth-child(3) {
+    opacity: 1;
+    right: 70px;
+    transition-delay: 1.8s;
+}
+
+.load-banner .introduce--us__arrow .arrow-item:nth-child(4) {
+    opacity: 1;
+    right: 110px;
+    transition-delay: 1.9s;
+}
+
+.load-banner .introduce--us__arrow .arrow-item:nth-child(5) {
+    opacity: 1;
+    right: 150px;
+    transition-delay: 2s;
+}
+
+.introduce--us__arrow-left .arrow-item:nth-child(1) {
+    left: 0;
+}
+
+.introduce--us__arrow-left .arrow-item:nth-child(2) {
+    left: 25px;
+}
+
+.introduce--us__arrow-left .arrow-item:nth-child(3) {
+    left: 60px;
+}
+
+.introduce--us__arrow-left .arrow-item:nth-child(4) {
+    left: 90px;
+}
+
+.introduce--us__arrow-left .arrow-item:nth-child(5) {
+    left: 120px;
+}
+
+.load-banner .introduce--us__arrow-left .arrow-item:nth-child(1) {
+    opacity: 1;
+    left: 0;
+    transition-delay: 2s;
+}
+
+.load-banner .introduce--us__arrow-left .arrow-item:nth-child(2) {
+    opacity: 1;
+    left: 35px;
+    transition-delay: 2.2s;
+}
+
+.load-banner .introduce--us__arrow-left .arrow-item:nth-child(3) {
+    opacity: 1;
+    left: 70px;
+    transition-delay: 2.4s;
+}
+
+.load-banner .introduce--us__arrow-left .arrow-item:nth-child(4) {
+    opacity: 1;
+    left: 110px;
+    transition-delay: 2.6s;
+}
+
+.load-banner .introduce--us__arrow-left .arrow-item:nth-child(5) {
+    opacity: 1;
+    left: 150px;
+    transition-delay: 2.8s;
+}
+
+.introduce-us__logo {
+   /* width: 60vh;
+    height: 60vh;*/
+    width: 500px;
+    height: 500px;
+
+    transition: all 0.5s ease-in;
+    transition-delay: 2s;
+    opacity: 0;
+}
+
+.load-banner .introduce-us__logo {
+    opacity: 1;
+}
+
+.introduce-us__logo .logo-decor > img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.introduce-us__logo .logo-decor .logo-decor-1 {
+    left: 24px;
+    padding: 28px;
+    transform: rotate(0deg);
+
+    transition: all 0.4s ease-in;
+    transition-delay: 2s;
+    opacity: 0;
+}
+
+.load-banner .introduce-us__logo .logo-decor .logo-decor-1 {
+    animation-name: animation-decor-1;
+    /* animation-duration: 4.2s;*/
+    animation-duration: 3.6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.54, 0.46, 0.41, 0.62);
+    opacity: 1;
+}
+
+@keyframes animation-decor-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(15deg);
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        transform: rotate(-10deg);
+        opacity: 0.5;
+    }
+    65% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-delay: 2s;
+    }
+}
+
+.introduce-us__logo .logo-decor .logo-decor-2 {
+    transition: all 0.4s ease-in;
+    transition-delay: 2s;
+    opacity: 0;
+
+}
+
+.load-banner .introduce-us__logo .logo-decor .logo-decor-2 {
+    animation-name: animation-decor-2;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transform: rotate(8deg);
+    opacity: 1;
+}
+
+@keyframes animation-decor-2 {
+    0% {
+        transform: rotate(8deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: rotate(-5deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: rotate(8deg);
+        opacity: 1;
+    }
+}
+
+
+.introduce-us__logo .logo-decor .logo-decor-3 {
+    transition: all 0.4s ease-in;
+    transition-delay: 2.5s;
+    opacity: 0;
+
+
+}
+
+.load-banner .introduce-us__logo .logo-decor .logo-decor-3 {
+    animation: animation-decor-3 3.1s linear infinite;
+    transform: rotate(4deg);
+    opacity: 1;
+}
+
+@keyframes animation-decor-3 {
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(4deg);
+    }
+}
+
+.introduce-us__logo .logo-decor .logo-decor-4 {
+    padding: 90px;
+    transition: all 0.4s ease-in;
+    transition-delay: 2s;
+    opacity: 0;
+}
+
+.load-banner .introduce-us__logo .logo-decor .logo-decor-4 {
+    animation: animation-decor-4 10s linear infinite;
+
+    opacity: 1;
+}
+
+@keyframes animation-decor-4 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.introduce-us__logo .logo-vietcore {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.introduce-us__logo .logo-vietcore .logo-vietcore__image {
+   /* width: 22vh;
+    height: 22vh;*/
+    width: 200px;
+    height: 200px;
+}
+
+.introduce-us__logo .logo-vietcore .logo-vietcore__image > img {
+    transition: all 0.5s ease-in;
+    transition-delay: 3s;
+    opacity: 0;
+}
+
+.load-banner .introduce-us__logo .logo-vietcore .logo-vietcore__image > img {
+    opacity: 1;
+}
+
+.introduce-us__bg-1 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 24vw;
+
+    z-index: 1;
+    transition: all 0.5s ease-in;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.load-banner .introduce-us__bg-1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.introduce-us__bg-2 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 50vw;
+
+    z-index: 1;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.load-banner .introduce-us__bg-2 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.introduce-us__bg-1 > img,
+.introduce-us__bg-2 > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+}
+
+.introduce-us__bg-1 > img {
+    opacity: 0.3;
+}
+
+.introduce-us__bg-2 > img {
+    opacity: 0.15;
+}
+
+.introduce-us__bg-1 .bg-1__decor img,
+.introduce-us__bg-2 .bg-2__decor img {
+    transition: all 0.5s ease-in;
+    transition-delay: 1.2s;
+    opacity: 0;
+}
+
+.introduce-us__bg-1 .bg-1__decor,
+.introduce-us__bg-2 .bg-2__decor {
+    transition: all 0.3s ease-in;
+}
+
+.load-banner .introduce-us__bg-1 .bg-1__decor img,
+.load-banner .introduce-us__bg-2 .bg-2__decor img {
+    opacity: 0.7;
+}
+
+@media (max-width: 1300px) {
+    .load-banner .introduce--us__dot.dot-right {
+        display: none !important;
+    }
+    .introduce--us__dot.dot-bottom {
+        position: absolute;
+        bottom: unset;
+        width: 190px;
+        z-index: 5;
+        transition: all 0.7s ease-in;
+         transform: translateX(-5%);
+        transition-delay: 1.2s;
+        top: 120px;
+        right:0;
+        left: unset;
+        opacity: 0;
+    }
+
+    .load-banner .introduce--us__dot.dot-bottom{
+        opacity: 1;
+        transform: translateX(-30%);
+    }
+    .introduce-us__logo {
+        width: 350px;
+        height: 350px;
+    }
+    .introduce-us__logo .logo-vietcore .logo-vietcore__image {
+        width: 130px;
+        height: 130px;
+    }
+    .introduce-us__heading .heading-subtitle {
+        margin-left: 50px;
+    }
+    .introduce-us__heading .image-1 img{
+        width: 220px;
+        height: unset;
+    }
+    .introduce-us__heading .image-2 img{
+        width: 320px;
+        height: unset;
+    }
+    .introduce-us__heading .image-3{
+        width: 40px;
+        height: unset;
+    }
+    .introduce-us__heading .image-4{
+        width: 500px;
+        height: unset;
+    }
+    .introduce-us__heading .image-6{
+        width: 220px;
+        height: unset;
+    }
+
+    .introduce-us__heading .heading-desc {
+        margin-left: -25px;
+    }
+    .introduce--us__arrow-left {
+        width: 130px;
+        height: 35px;
+    }
+    .introduce--us__arrow .arrow-item,
+    .introduce--us__arrow-left .arrow-item {
+        width: 18px;
+        height: 35px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(2) {
+        left: 25px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(3) {
+        left: 50px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(4) {
+        left: 75px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(5) {
+        left: 100px;
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(2) {
+        right:25px;
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(3) {
+        right: 50px;
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(4) {
+        right: 75px;
+
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(5) {
+        right: 100px;
+    }
+
+
+}
+
+@media(max-width: 992px) {
+    .introduce-us__logo {
+        width: 250px;
+        height: 250px;
+    }
+    .introduce-us__logo .logo-vietcore .logo-vietcore__image {
+        width: 90px;
+        height: 90px;
+    }
+    .introduce-us__heading .image-1 img{
+        width: 160px;
+    }
+    .introduce-us__heading .image-2 img{
+        width: 260px;
+    }
+    .introduce-us__heading .image-3{
+        width: 40px;
+    }
+    .introduce-us__heading .image-4{
+        width: 350px;
+    }
+    .introduce-us__heading .image-6{
+        width: 200px;
+    }
+}
+
+@media(max-width: 768px) {
+    .introduce-us__logo {
+        width: 200px;
+        height: 200px;
+    }
+    .introduce-us__logo .logo-vietcore .logo-vietcore__image {
+        width: 80px;
+        height: 80px;
+    }
+    .introduce-us__heading .heading-subtitle {
+        margin-left: 28px;
+    }
+    .introduce-us__heading .image-1 img{
+        width: 120px;
+    }
+    .introduce-us__heading .image-2 img{
+        width: 220px;
+    }
+    .introduce-us__heading .image-3{
+        width: 20px;
+    }
+    .introduce-us__heading .image-4{
+        width: 300px;
+    }
+    .introduce-us__heading .image-6{
+        width: 180px;
+    }
+    .introduce--us__dot.dot-bottom {
+        width: 120px;
+    }
+    .introduce-us__logo .logo-decor .logo-decor-1 {
+        left: 0;
+        padding: 0;
+    }
+}
+@media(max-width: 600px) {
+    .introduce-us__heading{
+        margin-left: -50px;
+        z-index: 5;
+    }
+    .introduce-us__heading .image-1 img{
+        width: 100px;
+    }
+    .introduce-us__heading .image-2 img{
+        width: 180px;
+    }
+    .introduce-us__heading .image-4{
+        width: 260px;
+    }
+    .introduce-us__heading .image-6{
+        width: 140px;
+    }
+    .introduce--us__arrow.arrow-right,
+    .introduce--us__arrow-left {
+        width: 105px;
+        height: 24px;
+    }
+    .introduce--us__arrow.arrow-right{
+        bottom: -10px;
+    }
+    .introduce--us__arrow .arrow-item,
+    .introduce--us__arrow-left .arrow-item {
+        width: 14px;
+        height: 24px;
+    }
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(2) {
+        left: 20px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(3) {
+        left: 40px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(4) {
+        left: 60px;
+    }
+
+    .load-banner .introduce--us__arrow-left .arrow-item:nth-child(5) {
+        left: 80px;
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(2) {
+        right:20px;
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(3) {
+        right: 40px;
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(4) {
+        right: 60px;
+
+    }
+
+    .load-banner .introduce--us__arrow .arrow-item:nth-child(5) {
+        right: 80px;
+    }
+}
+@media(max-width: 450px) {
+    .introduce--us__dot.dot-bottom {
+        width: 100px;
+    }
+
+    .introduce-us__logo {
+        width: 185px;
+        height: 185px;
+    }
+    .introduce-us__logo .logo-vietcore .logo-vietcore__image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .introduce-us__heading {
+        position: absolute;
+        left: 30vw;
+        bottom: -30px;
+        margin-left: 0;
+    }
+    .introduce-us__heading .image-1 img{
+        width: 80px;
+    }
+    .introduce-us__heading .image-2 img{
+        width: 140px;
+    }
+    .introduce-us__heading .image-4{
+        width: 220px;
+    }
+    .introduce-us__heading .image-6{
+        width: 120px;
+    }
+    .introduce--us__arrow.arrow-right,
+    .introduce--us__arrow-left {
+        width: 100px;
+        height: 20px;
+    }
+    .introduce--us__arrow .arrow-item,
+    .introduce--us__arrow-left .arrow-item {
+        width: 12px;
+        height: 20px;
+    }
+}
+@media(max-width: 370px) {
+
+    .introduce-us__heading .image-1 img {
+        width: 80px;
+    }
+
+    .introduce-us__heading .image-2 img {
+        width: 120px;
+    }
+
+    .introduce-us__heading .image-4 {
+        width: 180px;
+    }
+
+    .introduce-us__heading .image-6 {
+        width: 140px;
+    }
+}

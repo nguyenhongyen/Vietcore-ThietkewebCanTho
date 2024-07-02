@@ -13,7 +13,7 @@
 	
 	<!-----------Thư viện--------->
 	
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+	<!--<link rel="stylesheet" href="libs/bootstrap/bootstrap.css">-->
 	<link rel="stylesheet" href="libs/swiper/swiper.min.css">
 	<link rel="stylesheet" href="libs/aos/aos.css">
 	<link rel="stylesheet" href="fonts/all.min.css">
@@ -23,285 +23,386 @@
 	      rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/5new-gioithieu.css">
+	<!--	<link rel="stylesheet" href="css/9new-gioithieu.css">-->
 
 </head>
 <body>
-<header class=" header-navbar" id="header">
-	<div class="header-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="nav-contact d-lg-flex justify-content-between align-items-center">
-						<div class="grid-left d-flex justify-content-center justify-content-lg-between align-items-center">
-							<div class="c-phone">
-								<a href="tel:0912902951">
-									<i class="fas fa-mobile"></i>
-									0912.902.951 </a>
-							</div>
-							<div class="c-phone">
-								<a href="tel:02926533323">
-									<i class="fas fa-phone-alt"></i>
-									02926.533.323 </a>
-							</div>
-							<div class="c-mail">
-								<a href="mailto:info@vietcore.com.vn">
-									<i class="fas fa-envelope"></i>
-									info@vietcore.com.vn </a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<ul class="d-flex align-items-center justify-content-end header-social">
-						<li class="facebook">
-							<a target="_blank" href="https://www.facebook.com/vietcore">
+
+<header class=" bg-transparent">
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="col-3">
+				<a href="" aria-label="" class="d-block">
+					<img src="image/banner/logo-vietcore.png" width="90" height="85" alt="">
+				</a>
+			</div>
+			<div class="col-6 justify-content-end">
+				<div class="header-right d-flex gap-1 align-items-center justify-content-end">
+					<ul class="header-top list-unstyled mb-0 d-flex align-items-center">
+						<li>
+							<a href="https://www.facebook.com/vietcore" aria-label="https://www.facebook.com/vietcore"
+							   target="_blank" class="header-navbar__item d-block ">
 								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
-						<li class="zalo">
-							<a target="_blank" href="https://zalo.me/0912902951">
-								<img src="https://vietcore.com.vn/view/vietcore/assets/images/icon/zalo-icon-new.png">
-							</a>
-						</li>
-						<li class="google">
-							<a target="_blank" href="https://g.page/vietcore?share">
-								<i class="fa fa-map-marker-alt"></i>
-							</a>
-						</li>
-						<li class="youtube">
-							<a target="_blank" href="">
+						<li>
+							<a href="#" aria-label="Youtube" target="_blank" class="header-navbar__item d-block ">
 								<i class="fab fa-youtube"></i>
 							</a>
 						</li>
-						<li class="language">
-							<a data-id="1" href="javascript: void(0)">
-								<span><img src="/public/upload/images/icon/vietnam.svg"></span>
-								Tiếng Việt <i class="fal fa-angle-down"></i>
+						<li>
+							<a href="https://maps.app.goo.gl/Ns8Z4urrxHQqDuZm9" aria-label="Link bản đồ" target="_blank"
+							   class="header-navbar__item d-block ">
+								<i class="fas fa-map-marker-alt"></i>
 							</a>
-							<ul class="sublanguage">
-								<li>
-									<a class="changelang" data-id="2" href="javascript:void(0)">
-										<span>
-											<img src="https://vietcore.com.vn//public/upload/images/icon/english.svg"
-											     alt="English">
-										</span>
-										English </a>
-								</li>
-								<li>
-									<a class="changelang" data-id="1" href="javascript:void(0)">
-										<span>
-											<img src="https://vietcore.com.vn//public/upload/images/icon/vietnam.svg"
-											     alt="Tiếng Việt">
-										</span>
-										Tiếng Việt </a>
-								</li>
-							</ul>
+						</li>
+						<li>
+							<a href="https://maps.app.goo.gl/Ns8Z4urrxHQqDuZm9" aria-label="Link bản đồ" target="_blank"
+							   class="header-navbar__item d-block">
+								VN
+							</a>
 						</li>
 					</ul>
+					<button class="button-hamburger bg-transparent border-0" aria-label="Menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
+			
 			</div>
 		</div>
 	</div>
-	<div class="header-bottom">
-		<div class="container">
+	<div class="header-nav ">
+		<button class="bg-transparent border-0 d-flex align-items-center gap-2 text-white button-close" aria-label="Close nav">
+			<span class="icon">
+				<span></span>
+				<span></span>
+			</span>
+			ĐÓNG
+		</button>
+		<ul class="list-unstyled mb-0">
+			<li>
+				<a href="" aria-label="">
+					<span class="number">01</span>
+					<span class="title">Trang chủ</span>
+				</a>
+			</li>
+			<li>
+				<a href="" aria-label="">
+					<span class="number">02</span>
+					<span class="title">Giới thiệu</span>
+				</a>
+			</li>
+			<li>
+				<a aria-label="Dịch Vụ" href="#parent2" data-toggle="collapse" role="button" aria-expanded="false" class="">
+					<span class="number">03</span>
+					<span class="title">
+						Dịch Vụ <i class="fas fa-caret-down"></i>
+					</span>
+				</a>
+				<ul id="parent2" class="list-unstyled mb-0 collapse">
+					<li>
+						<a aria-label="Thiết Kế Website" href="/thiet-ke-web">Thiết Kế Website</a>
+					</li>
+					<li>
+						<a aria-label="Quảng cáo Google Adwords"
+						   href="https://vietcore.com.vn/quang-cao-google-adwords-can-tho">Quảng cáo Google Adwords</a>
+					</li>
+					<li>
+						<a aria-label="Digital Marketing" href="/digital-marketing-can-tho">Digital Marketing</a>
+					</li>
+					<li>
+						<a aria-label="Thiết Kế Nhận Diện Thương Hiệu" href="/thiet-ke-nhan-dien-thuong-hieu">Thiết Kế
+							Nhận Diện Thương Hiệu</a>
+					</li>
+					<li>
+						<a aria-label="Mỹ Thuật Đa Phương Tiện" href="/truyen-thong-da-phuong-tien">Mỹ Thuật Đa Phương
+							Tiện</a>
+					</li>
+					<li>
+						<a aria-label="Thiết Kế Ứng Dụng Di Động" href="/thiet-ke-ung-dung-di-dong">Thiết Kế Ứng Dụng Di
+							Động</a>
+					</li>
+					<li>
+						<a aria-label="Cung Ứng Nhân Lực"
+						   href="https://vietcore.com.vn/cung-ung-nhan-luc-can-tho-headhunter	">Cung Ứng Nhân Lực</a>
+					</li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="header-overlay"></div>
+</header>
+<!------end header------>
+<main class="wrapper-main">
+	<section class="introduce-us" style="background: url('image/banner/main-background.jpg') center/cover no-repeat">
+		<div class="container position-relative z-index-5">
 			<div class="row">
-				<div class="col-lg-2">
-					<div class="icon-mobile d-lg-none d-block" data-target="#modalContactAgency" data-toggle="modal"
-					     id="mobileInfo"><i class="fas fa-envelope"></i></div>
-					<div class="grid-logo custom-logo">
-						<a href="https://vietcore.com.vn/">
-							<h1>
-								<img src="https://vietcore.com.vn/public/upload/logo/logo-vietcore.png">
-							</h1>
-						</a>
-					</div>
-					<div id="humburger" class="humburger"><span></span></div>
-				</div>
-				<div class="col-lg-10">
-					<div class="nav-categories d-lg-flex align-items-end justify-content-end">
-						<nav class="grid-nav">
-							<ul class="list-unstyled pl-0" id="navigation">
-								<li class="logo-mobile d-block d-lg-none">
-									<a href="https://vietcore.com.vn/">
-										<img src="https://vietcore.com.vn/public/upload/logo/logo-vietcore.png">
-									</a>
-								</li>
-								<li>
-									<a href="/">TRANG CHỦ</a>
-								</li>
-								<li>
-									<a href="/gioi-thieu-vietcore">Giới Thiệu</a>
-								</li>
-								<li>
-									<a href="#parent2" data-toggle="collapse">Dịch Vụ</a>
-									<ul id="parent2" class="collapse list-unstyled pl-0" data-parent="#navigation">
-										<li>
-											<a href="/thiet-ke-web">Thiết Kế Website</a>
-										</li>
-										<li>
-											<a href="/digital-marketing">Digital Marketing</a>
-										</li>
-										<li>
-											<a href="/thiet-ke-nhan-dien-thuong-hieu">Thiết Kế Nhận Diện Thương Hiệu</a>
-										</li>
-										<li>
-											<a href="/truyen-thong-da-phuong-tien">Mỹ Thuật Đa Phương Tiện</a>
-										</li>
-										<li>
-											<a href="/thiet-ke-ung-dung-di-dong">Thiết Kế Ứng Dụng Di Động</a>
-										</li>
-										<li>
-											<a href="https://vietcore.com.vn/cung-ung-nhan-luc-can-tho-headhunter	">Cung
-												Ứng Nhân Lực</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#parent3" data-toggle="collapse">Bảng giá</a>
-									<ul id="parent3" class="collapse list-unstyled pl-0" data-parent="#navigation">
-										<li>
-											<a href="/bang-gia-thiet-ke-website-doanh-nghiep">Thiết kế web doanh
-												nghiệp</a>
-										</li>
-										<li>
-											<a href="/bang-gia-thiet-ke-website-ban-hang">Thiết kế web bán hàng</a>
-										</li>
-										<li>
-											<a href="/thiet-ke-web-oto">Thiết Kế Web Ô Tô</a>
-										</li>
-										<li>
-											<a href="/bang-gia-thiet-ke-website-thuong-mai-dien-tu">Thiết kế web sàn
-												TMĐT</a>
-										</li>
-										<li>
-											<a href="/bang-gia-thiet-ke-bo-nhan-dien-thuong-hieu">Thiết kế thương
-												hiệu</a>
-										</li>
-										<li>
-											<a href="/bang-gia-hosting">Hosting SSD</a>
-										</li>
-										<li>
-											<a href="/bang-gia-ten-mien">Đăng ký tên miền</a>
-										</li>
-										<li>
-											<a href="/bang-gia-mail-server">Email Server</a>
-										</li>
-										<li>
-											<a href="/dich-vu-quan-tri-website">Quản trị website</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="/mau-website">DỰ ÁN ĐÃ LÀM</a>
-								</li>
-								<li>
-									<a href="#parent5" data-toggle="collapse">TIN TỨC</a>
-									<ul id="parent5" class="collapse list-unstyled pl-0" data-parent="#navigation">
-										<li>
-											<a href="/kien-thuc-can-biet">Kiến Thức</a>
-										</li>
-										<li>
-											<a href="/cac-hoat-dong">Các Hoạt Động</a>
-										</li>
-										<li>
-											<a href="https://vietcore.com.vn/tuyen-dung">Tuyển Dụng</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="/lienhe">Liên hệ</a>
-								</li>
-								<li class="d-block d-lg-none">
-									<a class="changelang" data-id="2" href="javascript: void(0)">
-										<img src="/public/upload/images/icon/english.svg">
-										English </a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="col-lg-12 d-lg-none d-block">
-					<div class="mobile-info" data-target="mobileInfo">
-						<div class="d-flex align-items-center justify-content-start">
-							<div class="c-phone">
-								<a href="tel:0912.902.951">
-									<i class="fas fa-mobile"></i>
-									0912.902.951 </a>
+				<div class="col">
+					<div class="introduce-us__wrap d-flex align-items-end">
+						<div class="introduce-us__logo position-relative">
+							<div class="logo-decor position-relative w-100 h-100">
+								<img src="image/banner/circle/round_1new.svg" class="logo-decor-1" width="376"
+								     height="414" alt="">
+								<img src="image/banner/circle/round_2new.svg" class="logo-decor-2" width="457"
+								     height="429" alt="">
+								<img src="image/banner/circle/round_3new.svg" class="logo-decor-3" width="465"
+								     height="461" alt="">
+								<img src="image/banner/circle/round_4new.svg" class="logo-decor-4" width="316"
+								     height="317" alt="">-
 							</div>
-							<div class="c-phone">
-								<a href="tel:02926.533.323">
-									<i class="fas fa-phone-alt"></i>
-									02926.533.323 </a>
+							<div class="logo-vietcore">
+								<div class="logo-vietcore__image">
+									<img src="image/banner/logo-notext.png" width="121" height="141"
+									     class="w-100 h-100 object-fit-contain" alt="">
+								</div>
+							
 							</div>
-							<div class="c-mail">
-								<a href="mailto:info@vietcore.com.vn">
-									<i class="fas fa-envelope"></i>
-									info@vietcore.com.vn </a>
+						</div>
+						<div class="introduce-us__content d-none">
+							<h2>
+								<span>MAKE</span>
+								<span>POSITIVE</span>
+								<span>IMPACTS</span>
+							</h2>
+							<div class="introduce-us__title">
+								<div>ON THE</div>
+								<h1>WORLD</h1>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="header-overlay" id="header-overlay"></div>
-</header>
-<!------end header------>
-<main class="wrapper-main">
-	<div class="section-loader-2 d-none">
-		<svg xmlns="http://www.w3.org/2000/svg" width="1200.000000pt" height="1200.000000pt"
-		     viewBox="0 0 1200.000000 1200.000000" preserveAspectRatio="xMidYMid meet">
-			<g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)">
-				<path d="M5725 11359 c-749 -444 -3304 -1933 -3577 -2085 l-88 -49 3 -2344 2
-  -2344 425 -247 c234 -136 875 -507 1425 -825 550 -318 1241 -718 1535 -889
-  294 -170 553 -320 575 -331 l40 -22 715 418 c393 231 814 477 935 548 121 71
-  380 222 575 336 629 368 1149 674 1398 823 212 126 240 146 225 157 -16 10
-  -799 451 -1248 702 -88 49 -258 144 -377 211 -119 67 -221 122 -227 122 -5 0
-  -260 -148 -568 -328 -1227 -722 -1456 -855 -1467 -855 -6 0 -94 50 -196 110
-  -102 61 -383 226 -625 368 -603 354 -1263 743 -1306 772 l-36 23 -8 1213 c-4
-  666 -8 1232 -9 1256 l-1 44 1087 634 1088 635 67 -38 c226 -126 1563 -907
-  1850 -1081 l123 -74 157 94 c147 87 398 233 1091 631 361 208 565 327 575 336
-  5 4 -40 36 -100 70 -59 35 -238 141 -398 235 -159 95 -456 270 -660 390 -203
-  120 -467 275 -585 345 -118 70 -381 225 -585 345 -203 120 -467 275 -585 345
-  -674 398 -899 530 -912 534 -7 2 -157 -81 -333 -185z"/>
-				<path d="M5120 8667 c-984 -574 -1060 -619 -1060 -627 0 -6 20 -18 566 -341
-  338 -200 2286 -1337 3112 -1817 l242 -141 0 1154 0 1153 -152 88 c-163 92
-  -1092 634 -1268 739 -149 89 -539 315 -542 315 -2 0 -406 -236 -898 -523z"/>
-				<path d="M9875 9063 c-241 -148 -994 -586 -1492 -869 l-192 -109 -1 -481 c0
-  -264 3 -799 7 -1188 l6 -707 116 -68 c147 -87 909 -523 1321 -756 173 -98 334
-  -189 358 -202 l42 -25 -2 2243 c-2 1485 -6 2243 -13 2245 -5 1 -73 -37 -150
-  -83z"/>
-				<path d="M2660 1020 l0 -540 580 0 580 0 0 85 0 85 -450 0 -450 0 0 135 0 135
-  250 0 250 0 0 105 0 105 -250 0 -250 0 0 115 0 115 435 0 435 0 0 100 0 100
-  -565 0 -565 0 0 -540z"/>
-				<path d="M4060 1460 l0 -100 250 0 250 0 0 -440 0 -440 130 0 130 0 0 440 0
-  440 268 2 267 3 3 98 3 97 -651 0 -650 0 0 -100z"/>
-				<path d="M5675 1545 c-50 -18 -91 -62 -105 -114 -7 -27 -10 -173 -8 -428 3
-  -437 4 -440 77 -481 61 -34 153 -42 531 -42 486 0 542 10 589 105 21 41 26 67
-  29 162 3 62 2 113 -1 113 -2 0 -47 8 -98 19 -52 10 -111 22 -131 25 l-38 7 0
-  -111 0 -110 -350 0 -350 0 0 335 0 335 350 0 350 0 0 -95 c0 -69 3 -95 13 -95
-  6 0 65 7 130 17 l117 16 0 88 c0 165 -26 221 -119 254 -62 21 -924 22 -986 0z"/>
-				<path d="M9020 1020 l0 -540 115 0 115 0 0 205 0 205 123 0 122 0 224 -205
-  224 -205 189 0 c103 0 188 3 188 8 -1 4 -109 95 -242 202 l-241 195 99 8 c171
-  13 182 16 223 52 53 48 61 86 61 281 0 192 -9 236 -55 279 -57 54 -68 55 -629
-  55 l-516 0 0 -540z m941 311 c28 -28 29 -33 29 -121 0 -88 -1 -93 -29 -121
-  l-29 -29 -321 0 -321 0 0 150 0 150 321 0 321 0 29 -29z"/>
-				<path d="M10652 1023 l3 -538 583 -3 582 -2 0 85 0 85 -450 0 -450 0 0 135 0
-  135 250 0 251 0 -3 103 -3 102 -247 3 -248 2 0 115 0 115 433 2 432 3 3 98 3
-  97 -571 0 -570 0 2 -537z"/>
-				<path d="M190 1525 c0 -5 130 -225 451 -762 93 -155 172 -288 175 -297 5 -13
-  23 -16 99 -16 l92 0 304 532 c167 292 306 535 307 540 2 4 -57 8 -130 8 l-135
-  0 -201 -373 c-111 -205 -208 -381 -215 -390 -10 -14 -23 3 -90 121 -43 75
-  -142 250 -221 387 l-144 250 -146 3 c-80 1 -146 0 -146 -3z"/>
-				<path d="M1920 990 l0 -540 135 0 135 0 0 540 0 540 -135 0 -135 0 0 -540z"/>
-				<path d="M7333 1520 c-53 -12 -95 -43 -117 -85 -20 -39 -21 -53 -21 -445 0
-  -389 1 -407 21 -445 14 -29 34 -47 70 -65 l49 -25 535 0 535 0 50 25 c92 46
-  90 36 93 487 2 270 -1 406 -8 435 -17 60 -64 103 -128 117 -60 13 -1025 14
-  -1079 1z m987 -495 l0 -335 -435 0 -435 0 0 335 0 335 435 0 435 0 0 -335z"/>
-			</g>
-		</svg>
-	</div>
+		<div class="introduce--us__dot dot-right">
+			<img src="./image/banner/dot-1.svg" width="215" height="72" class="w-100 h-100 object-fit-contain" alt="">
+		</div>
+		<div class="introduce--us__dot dot-bottom">
+			<img src="./image/banner/dot-1.svg" width="215" height="72" class="w-100 h-100 object-fit-cover" alt="">
+		</div>
+		<div class="introduce--us__arrow arrow-right">
+			<div class="arrow-item arrow-1">
+				<img src="./image/banner/arrow.svg" width="23" height="36" class="w-100 h-100 object-fit-cover"
+				     alt="Arrow 1">
+			</div>
+			<div class="arrow-item arrow-2">
+				<img src="./image/banner/arrow.svg" width="23" height="36" class="w-100 h-100 object-fit-cover" alt="">
+			</div>
+			<div class="arrow-item arrow-3">
+				<img src="./image/banner/arrow.svg" width="23" height="36" class="w-100 h-100 object-fit-cover" alt="">
+			</div>
+			<div class="arrow-item arrow-4">
+				<img src="./image/banner/arrow.svg" width="23" height="36" class="w-100 h-100 object-fit-cover" alt="">
+			</div>
+			<div class="arrow-item arrow-5">
+				<img src="./image/banner/arrow.svg" width="23" height="36" class="w-100 h-100 object-fit-cover" alt="">
+			</div>
+		
+		</div>
+		
+		<div class="introduce-us__bg-1">
+			<img src="./image/banner/background-animation/left1.svg" width="619" height="1004"
+			     class="w-100 h-100" alt="">
+			<div class="introduce-us__bg-decor bg-1__decor h-100">
+				<img src="./image/banner/background-animation/left2.svg"  alt="">
+			</div>
+		</div>
+		
+		<div class="introduce-us__bg-2">
+			<img src="./image/banner/background-animation/right1.svg" width="1538" height="1004"
+			     class="w-100 h-100" alt="">
+			<div class="introduce-us__bg-decor bg-2__decor h-100">
+				<img src="./image/banner/background-animation/right2.svg"
+				     class="w-100 h-100" alt="">
+			</div>
+			
+		</div>
+	
+	</section>
+	
 	<!-------end loader ----->
+	<section class="main main-service">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="main-title wow slideInLeft" data-wow-delay="0"
+					     style="visibility: visible; animation-name: slideInLeft;">
+						Giải pháp của chúng tôi
+					</div>
+					<p class="main-sub-title wow slideInLeft" data-wow-delay="0.2s"
+					   style="visibility: visible; animation-delay: 0.2s; animation-name: slideInLeft;">
+						Vietcore Cung cấp các hệ thống giải pháp số toàn diện cho doanh nghiệp
+					</p>
+				</div>
+				<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.4s"
+				     style="margin-top: 4rem; visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+					<div class="row">
+						<div class="col-lg-4 col-sm-6">
+							<div class="service-item">
+								<div class="service-logo">
+									<a href="https://vietcore.com.vn/thiet-ke-web" title="Thiết Kế Website">
+										<img alt="Thiết Kế Website"
+										     src="https://vietcore.com.vn/public/upload/files/giaiphap/thiet%20ke%20web%20can%20tho.png"
+										     title="Thiết Kế Website">
+									</a>
+								</div>
+								<div class="service-content">
+									<div class="service-title">
+										<a href="https://vietcore.com.vn/thiet-ke-web" title="Thiết Kế Website">
+											Thiết Kế Website </a>
+									</div>
+									<div class="service-desc">
+										<p><em>Hiện thực hóa mọi ý&nbsp;tưởng, không rào cản nào có thể giới hạn website
+											của bạn.</em></p>
+										
+										<p>• Website&nbsp;• Landing Page&nbsp;• Cart Page •<br>
+											• Hosting • Domain • Mail Server •
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="service-item">
+								<div class="service-logo">
+									<a href="https://vietcore.com.vn/thiet-ke-nhan-dien-thuong-hieu"
+									   title="Thiết Kế Nhận Diện Thương Hiệu">
+										<img alt="Thiết Kế Nhận Diện Thương Hiệu"
+										     src="https://vietcore.com.vn/public/upload/files/giaiphap/thiet%20ke%20nhan%20dien%20thuong%20hieu%20can%20tho.png"
+										     title="Thiết Kế Nhận Diện Thương Hiệu">
+									</a>
+								</div>
+								<div class="service-content">
+									<div class="service-title">
+										<a href="https://vietcore.com.vn/thiet-ke-nhan-dien-thuong-hieu"
+										   title="Thiết Kế Nhận Diện Thương Hiệu">
+											Thiết Kế Nhận Diện Thương Hiệu </a>
+									</div>
+									<div class="service-desc">
+										<p><em>Đánh dấu thương hiệu của bạn bằng sự ấn tượng và&nbsp;độc nhất.</em></p>
+										
+										<p>• Logo • Ấn phẩm&nbsp;• Vật&nbsp;phẩm&nbsp;• Tặng phẩm&nbsp;•<br>
+											Nhận diện doanh nghiệp&nbsp;• Nhận diện sản phẩm
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="service-item">
+								<div class="service-logo">
+									<a href="https://vietcore.com.vn/digital-marketing" title="Digital Marketing">
+										<img alt="Digital Marketing"
+										     src="https://vietcore.com.vn/public/upload/files/giaiphap/digital%20maketing%20can%20tho.png"
+										     title="Digital Marketing">
+									</a>
+								</div>
+								<div class="service-content">
+									<div class="service-title">
+										<a href="https://vietcore.com.vn/digital-marketing" title="Digital Marketing">
+											Digital Marketing </a>
+									</div>
+									<div class="service-desc">
+										<p><em>Rút ngắn&nbsp;hành trình đến với khách hàng bằng chiến lược Digital
+											Marketing&nbsp;tối ưu, toàn diện.</em></p>
+										
+										<p>• SEO&nbsp;• Google Adwords • Facebook Ad •<br>
+											• Social Media Marketing • Email Marketing •
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="service-item">
+								<div class="service-logo">
+									<a href="https://vietcore.com.vn/thiet-ke-ung-dung-di-dong"
+									   title="Thiết Kế Ứng Dụng Di Động">
+										<img alt="Thiết Kế Ứng Dụng Di Động"
+										     src="https://vietcore.com.vn/public/upload/files/giaiphap/thiet%20ke%20ung%20dung%20di%20dong%20can%20tho.png"
+										     title="Thiết Kế Ứng Dụng Di Động">
+									</a>
+								</div>
+								<div class="service-content">
+									<div class="service-title">
+										<a href="https://vietcore.com.vn/thiet-ke-ung-dung-di-dong"
+										   title="Thiết Kế Ứng Dụng Di Động">
+											Thiết Kế Ứng Dụng Di Động </a>
+									</div>
+									<div class="service-desc">
+										<p><em>Tiếp cận lượng người dùng thiết bị di động&nbsp;khổng lồ theo cách riêng
+											của&nbsp;bạn.</em></p>
+										
+										<p>• Ứng dụng di động • Ứng dụng web •<br>
+											• Ứng dụng kết hợp •
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="service-item">
+								<div class="service-logo">
+									<a href="https://vietcore.com.vn/truyen-thong-da-phuong-tien"
+									   title="Truyền Thông Đa Phương Tiện">
+										<img alt="Truyền Thông Đa Phương Tiện"
+										     src="https://vietcore.com.vn/public/upload/files/giaiphap/thiet%20ke%20da%20phuong%20tien%20can%20tho.png"
+										     title="Truyền Thông Đa Phương Tiện">
+									</a>
+								</div>
+								<div class="service-content">
+									<div class="service-title">
+										<a href="https://vietcore.com.vn/truyen-thong-da-phuong-tien"
+										   title="Truyền Thông Đa Phương Tiện">
+											Truyền Thông Đa Phương Tiện </a>
+									</div>
+									<div class="service-desc">
+										<p><em>Ứng dụng công nghệ vào việc sáng tạo và thiết kế các sản phẩm truyền
+											thông.</em>&nbsp;
+										</p>
+										
+										<p>• Dựng phim • Biên tập&nbsp;video • Tạo audio&nbsp;•<br>
+											• Thiết kế đồ họa • Xây dựng hình ảnh ba chiều&nbsp;•
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="service-item">
+								<div class="service-logo">
+									<a href="https://vietcore.com.vn/cung-ung-nhan-luc-can-tho-headhunter"
+									   title="Cung Ứng Nhân Lực">
+										<img alt="Cung Ứng Nhân Lực"
+										     src="https://vietcore.com.vn/public/upload/files/giaiphap/viec%20lam%20can%20tho.png"
+										     title="Cung Ứng Nhân Lực">
+									</a>
+								</div>
+								<div class="service-content">
+									<div class="service-title">
+										<a href="https://vietcore.com.vn/cung-ung-nhan-luc-can-tho-headhunter"
+										   title="Cung Ứng Nhân Lực">
+											Cung Ứng Nhân Lực </a>
+									</div>
+									<div class="service-desc">
+										<p><em>Dịch vụ săn đầu người - Headhunter chuyên nghiệp - Vietcore HR.</em></p>
+										
+										<p>Là đơn vị chủ quản của nhiều sàn giao dịch việc làm với&nbsp;kho dữ liệu ứng
+											viên khổng lồ,&nbsp;mang đến những lợi thế vượt trội trong hoạt động cung
+											ứng nhân lực.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	<section class="section-map overflow-hidden section-gap">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
@@ -4654,7 +4755,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4664,7 +4765,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4674,7 +4775,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4684,7 +4785,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4694,7 +4795,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4704,7 +4805,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 									</div>
@@ -4734,7 +4835,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4744,7 +4845,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4754,7 +4855,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 									</div>
@@ -4774,7 +4875,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4784,7 +4885,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4794,7 +4895,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 									</div>
@@ -4814,7 +4915,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4824,7 +4925,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4834,7 +4935,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 									</div>
@@ -4854,7 +4955,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4864,7 +4965,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4874,7 +4975,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 									</div>
@@ -4894,7 +4995,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4904,7 +5005,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 										<span class="item">
@@ -4914,7 +5015,7 @@
 												     height="75" class="w-100 h-100 object-fit-contain" alt="">
 											</span>
 											<a href="#" target="_blank" aria-label="" class="item-title">
-												casemex.com
+												Xem Webiste<i class="far fa-angle-right ms-1"></i>
 											</a>
 										</span>
 									</div>
@@ -4926,7 +5027,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 
 </main>
 <!-------end main----->
@@ -5144,7 +5245,7 @@
 
 
 <script src="libs/jquery.min.js"></script>
-<script src="libs/bootstrap/bootstrap.js"></script>
+<!--<script src="libs/bootstrap/bootstrap.js"></script>-->
 <script src="libs/swiper/swiper.min.js"></script>
 <script src="libs/aos/aos.js"></script>
 <script src="js/3new-gioithieu.js"></script>
