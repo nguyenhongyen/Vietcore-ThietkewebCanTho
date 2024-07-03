@@ -189,6 +189,7 @@ header ul.header-top > li:not(:last-child)::after {
     height: 100vh;
     background: linear-gradient(90deg, rgb(22 23 23 / 42%), rgb(32 33 34 / 0%));
     backdrop-filter: blur(15px);
+    background: rgb(0 0 0 / 91%);
     transition: all 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -236,6 +237,7 @@ header ul.header-top > li:not(:last-child)::after {
     width: 100%;
     height: 660px;
     padding: 50px;
+    overflow: hidden;
 }
 
 .header-nav > ul > li > a {
@@ -253,6 +255,15 @@ header ul.header-top > li:not(:last-child)::after {
 .header-nav > ul > li > a .number {
     font-size: 13px;
     width: 22px;
+    position: relative;
+    padding-right: 5px;
+}
+.header-nav > ul > li > a .number::after{
+    position: absolute;
+    content: '/';
+    right: 0;
+    top:0;
+
 }
 
 .header-nav > ul > li > a .title {
@@ -288,6 +299,9 @@ header ul.header-top > li:not(:last-child)::after {
     width: 100%;
     display: block;
 }
+.header-nav > ul > li > ul > li > a:hover{
+    color:var(--base-color-2)
+}
 .header-nav__contact{
     background-color:var(--accent-color);
     padding:30px 50px;
@@ -304,15 +318,54 @@ header ul.header-top > li:not(:last-child)::after {
 }
 
 @media (max-width: 768px) {
+    .header-logo > img{
+        height: 75px;
+        width: auto;
+    }
+    header.is-scroll .header-logo{
+        width: 100px;
+        height: 90px;
+    }
 
     .header-nav > ul > li > a .title {
-        font-size: 1em;
+        font-size: 1.05em;
+    }
+    .header-nav > ul > li > a .number {
+        font-size: 0.8em;
     }
 }
 
 @media(max-width: 600px) {
     .header-nav{
         width: 100%;
+    }
+    .button-close {
+        margin: 30px 20px 0 0;
+    }
+    .header-nav > ul{
+        padding: 30px;
+    }
+    .header-nav__contact{
+        padding: 30px;
+    }
+    header ul.header-top > li > a{
+        font-size: 0.8em;
+        padding-right: 5px;
+    }
+}
+@media(max-width: 370px) {
+    .header-item__contact{
+        font-size: 0.9em;
+    }
+    .header-logo > img{
+        height: 65px;
+        width: auto;
+    }
+    header.is-scroll .header-logo{
+        border-radius: 0 0 15px 15px;
+        padding: 15px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -974,7 +1027,9 @@ header ul.header-top > li:not(:last-child)::after {
     .load-banner .introduce--us__arrow .arrow-item:nth-child(5) {
         right: 100px;
     }
-
+    .introduce-us__logo .logo-decor .logo-decor-4{
+        padding: 60px;
+    }
 
 }
 
@@ -1007,6 +1062,9 @@ header ul.header-top > li:not(:last-child)::after {
 
     .introduce-us__heading .image-6 {
         width: 200px;
+    }
+    .introduce-us__logo .logo-decor .logo-decor-4 {
+        padding: 35px;
     }
 }
 
