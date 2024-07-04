@@ -720,8 +720,6 @@ header ul.header-top > li:not(:last-child)::after {
 }
 
 .introduce-us__logo {
-    /* width: 60vh;
-     height: 60vh;*/
     width: 500px;
     height: 500px;
 
@@ -757,8 +755,6 @@ header ul.header-top > li:not(:last-child)::after {
     animation-name: animation-decor-1;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-
-    /*    animation-delay: 1s;*/
     animation-timing-function: cubic-bezier(.33, .36, .86, .84);
 }
 
@@ -791,7 +787,8 @@ header ul.header-top > li:not(:last-child)::after {
 .introduce-us__logo .logo-decor .loader-transform.logo-decor-1 {
     opacity: 1;
     animation-name: animation-transform-left;
-    animation-timing-function: cubic-bezier(.34, .28, .26, .55);
+ /*   animation-timing-function: cubic-bezier(.34, .28, .26, .55);*/
+    animation-timing-function:cubic-bezier(.33, .36, .86, .84);
     animation-duration: 3.2s;
     animation-delay: 2.2s;
 }
@@ -841,7 +838,8 @@ header ul.header-top > li:not(:last-child)::after {
 .introduce-us__logo .logo-decor .loader-transform.logo-decor-2 {
     opacity: 1;
     animation-name: animation-transform-right;
-    animation-timing-function: cubic-bezier(.34, .28, .26, .55);
+  /*  animation-timing-function: cubic-bezier(.34, .28, .26, .55);*/
+    animation-timing-function:cubic-bezier(.33, .36, .86, .84);
     animation-duration: 3.2s;
     animation-delay: 2.2s;
 }
@@ -1173,7 +1171,7 @@ header ul.header-top > li:not(:last-child)::after {
     }
 
     .introduce-us__heading .image-2 img {
-        width: 220px;
+        width: 210px;
     }
 
     .introduce-us__heading .image-3 {
@@ -1209,7 +1207,7 @@ header ul.header-top > li:not(:last-child)::after {
     }
 
     .introduce-us__heading .image-2 img {
-        width: 180px;
+        width: 160px;
     }
 
     .introduce-us__heading .image-4 {
