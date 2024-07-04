@@ -501,7 +501,7 @@ header ul.header-top > li:not(:last-child)::after {
 
 
 .introduce-us__heading .image-4 {
-    transition-delay: 3.2s;
+    transition-delay: 3.4s;
     opacity: 0;
 }
 
@@ -510,7 +510,7 @@ header ul.header-top > li:not(:last-child)::after {
     animation-name: text-zoom;
     animation-timing-function: ease-in;
     animation-duration: 0.95s;
-    animation-delay: 2.6s;
+    animation-delay: 2.8s;
 }
 
 @keyframes text-zoom {
