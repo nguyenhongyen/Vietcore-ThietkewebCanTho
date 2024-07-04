@@ -1,5 +1,6 @@
 :root {
-    --base-color:#00aef0;
+   --primary-color:#09286f;
+    --base-color: #00aef0;
     --bs-white: #ffff;
     --bs-gray-100: rgb(243 244 246);
     --bs-gray-200: rgb(229 231 235);
@@ -10,7 +11,7 @@
     --bs-gray-700: rgb(55 65 81);
     --bs-gray-800: rgb(31 41 55);
     --bs-gray-900: rgb(17 24 39);
-    --accent-color:rgb(6, 32, 92);
+    --accent-color: rgb(6, 32, 92);
 }
 
 .z-index-1 {
@@ -78,7 +79,8 @@ header {
     padding: 10px 0;
     position: relative;
     z-index: 10;
-    transition: all 0.4s ease-in;
+    transition: transform .6s ease-in-out;
+
 }
 
 header.is-scroll {
@@ -86,19 +88,30 @@ header.is-scroll {
     left: 0;
     top: 0;
     width: 100%;
-    background: var(--base-color) !important;
-    border-bottom: 4px solid var(--base-color-2);
+    transition: all .6s ease-in-out;
+    background: var(--primary-color) !important;
+    border-bottom: 4px solid var(--base-color);
+    animation: header-scroll 0.6s ease-in-out;
+}
+@keyframes header-scroll {
+    0% {
+       transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header.is-scroll .header-logo {
-    background-color: var(--base-color);
+    background-color: var(--primary-color);
     padding: 15px;
     border-radius: 0 0 20px 20px;
     position: absolute;
     top: -30px;
     width: 120px;
     height: 100px;
-    transition: all 0.4s ease-in;
+  /*  transition: all 0.4s ease-in;*/
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, .1));
 }
 
@@ -136,7 +149,7 @@ header ul.header-top > li:not(:last-child)::after {
 }
 
 .button-hamburger,
-.button-close .icon{
+.button-close .icon {
     width: 40px;
     height: 40px;
     display: flex;
@@ -152,10 +165,12 @@ header ul.header-top > li:not(:last-child)::after {
     height: 2px;
     background-color: var(--bs-white);
 }
-.button-close .icon{
-    gap:0;
+
+.button-close .icon {
+    gap: 0;
     background-color: var(--accent-color);
 }
+
 .button-close .icon > span {
     width: 25px;
     height: 2px;
@@ -170,7 +185,8 @@ header ul.header-top > li:not(:last-child)::after {
 .button-close .icon span:nth-child(2) {
     transform: rotate(-226deg) translateY(-1px) translateX(0px);
 }
-.button-close{
+
+.button-close {
     margin: 50px 40px 0 0;
 
 }
@@ -178,6 +194,7 @@ header ul.header-top > li:not(:last-child)::after {
 .button-close:hover .icon span:nth-child(1) {
     transform: rotate(-180deg) translateY(0) translateX(0);
 }
+
 .button-close:hover .icon span:nth-child(2) {
     transform: rotate(-180deg) translateY(0) translateX(0);
 }
@@ -260,11 +277,12 @@ header ul.header-top > li:not(:last-child)::after {
     position: relative;
     padding-right: 5px;
 }
-.header-nav > ul > li > a .number::after{
+
+.header-nav > ul > li > a .number::after {
     position: absolute;
     content: '/';
     right: 0;
-    top:0;
+    top: 0;
 
 }
 
@@ -284,7 +302,8 @@ header ul.header-top > li:not(:last-child)::after {
     color: var(--base-color-2);
 
 }
-.header-nav > ul > li > a[aria-expanded="true"] .title{
+
+.header-nav > ul > li > a[aria-expanded="true"] .title {
     font-weight: 700;
 }
 
@@ -301,13 +320,16 @@ header ul.header-top > li:not(:last-child)::after {
     width: 100%;
     display: block;
 }
-.header-nav > ul > li > ul > li > a:hover{
-    color:var(--base-color-2)
+
+.header-nav > ul > li > ul > li > a:hover {
+    color: var(--base-color-2)
 }
-.header-nav__contact{
-    background-color:var(--accent-color);
-    padding:30px 50px;
+
+.header-nav__contact {
+    background-color: var(--accent-color);
+    padding: 30px 50px;
 }
+
 .header-item__contact {
     color: var(--bs-white);
 
@@ -320,11 +342,12 @@ header ul.header-top > li:not(:last-child)::after {
 }
 
 @media (max-width: 768px) {
-    .header-logo > img{
+    .header-logo > img {
         height: 75px;
         width: auto;
     }
-    header.is-scroll .header-logo{
+
+    header.is-scroll .header-logo {
         width: 100px;
         height: 90px;
     }
@@ -332,38 +355,46 @@ header ul.header-top > li:not(:last-child)::after {
     .header-nav > ul > li > a .title {
         font-size: 1.05em;
     }
+
     .header-nav > ul > li > a .number {
         font-size: 0.8em;
     }
 }
 
-@media(max-width: 600px) {
-    .header-nav{
+@media (max-width: 600px) {
+    .header-nav {
         width: 100%;
     }
+
     .button-close {
         margin: 30px 20px 0 0;
     }
-    .header-nav > ul{
+
+    .header-nav > ul {
         padding: 30px;
     }
-    .header-nav__contact{
+
+    .header-nav__contact {
         padding: 30px;
     }
-    header ul.header-top > li > a{
+
+    header ul.header-top > li > a {
         font-size: 0.8em;
         padding-right: 5px;
     }
 }
-@media(max-width: 370px) {
-    .header-item__contact{
+
+@media (max-width: 370px) {
+    .header-item__contact {
         font-size: 0.9em;
     }
-    .header-logo > img{
+
+    .header-logo > img {
         height: 65px;
         width: auto;
     }
-    header.is-scroll .header-logo{
+
+    header.is-scroll .header-logo {
         border-radius: 0 0 15px 15px;
         padding: 15px;
         width: 80px;
@@ -421,7 +452,7 @@ header ul.header-top > li:not(:last-child)::after {
     opacity: 1;
     animation-name: text-in;
     animation-timing-function: ease;
-    animation-duration: 1.1s;
+    animation-duration: 1.2s;
     animation-delay: 2.2s;
 }
 
@@ -432,7 +463,7 @@ header ul.header-top > li:not(:last-child)::after {
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
         animation-duration: 1s;
     }
     80% {
@@ -445,16 +476,27 @@ header ul.header-top > li:not(:last-child)::after {
 }
 
 .introduce-us__heading .image-3 {
-    transition-delay: 3s;
+    transition-delay: 3.2s;
     opacity: 0;
 }
 
 .load-banner .introduce-us__heading .image-3 {
     opacity: 1;
-    animation-name: text-zoom;
-    animation-timing-function: ease;
-    animation-duration: 1.1s;
-    animation-delay: 2.8s;
+    animation-name: text-up;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+    animation-delay: 3.2s;
+}
+
+@keyframes text-up {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
 }
 
 
@@ -467,7 +509,7 @@ header ul.header-top > li:not(:last-child)::after {
     opacity: 1;
     animation-name: text-zoom;
     animation-timing-function: ease-in;
-    animation-duration: 1s;
+    animation-duration: 0.95s;
     animation-delay: 2.6s;
 }
 
@@ -476,7 +518,7 @@ header ul.header-top > li:not(:last-child)::after {
         transform: scale(1);
     }
     90% {
-        transform: scale(1.08);
+        transform: scale(1.05);
     }
     100% {
         transform: scale(1);
@@ -534,7 +576,7 @@ header ul.header-top > li:not(:last-child)::after {
     bottom: -12px;
     width: 260px;
     z-index: 5;
-    transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in-out;
     transform: translateX(-200%);
     transition-delay: 1.2s;
 }
@@ -710,14 +752,14 @@ header ul.header-top > li:not(:last-child)::after {
     opacity: 0;
 }
 
-.load-banner .introduce-us__logo .logo-decor .logo-decor-1 {
-    animation-name: animation-decor-1;
-    /* animation-duration: 4.2s;*/
-    animation-duration: 3.6s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.54, 0.46, 0.41, 0.62);
+.introduce-us__logo .logo-decor .logo-decor-1.loader-banner {
     opacity: 1;
+    animation-name: animation-decor-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    /*    animation-delay: 1s;*/
+    animation-timing-function: cubic-bezier(.33, .36, .86, .84);
 }
 
 @keyframes animation-decor-1 {
@@ -725,7 +767,7 @@ header ul.header-top > li:not(:last-child)::after {
         transform: rotate(0deg);
     }
     15% {
-        transform: rotate(15deg);
+        transform: rotate(10deg);
         opacity: 1;
     }
     25% {
@@ -745,6 +787,29 @@ header ul.header-top > li:not(:last-child)::after {
     }
 }
 
+
+.introduce-us__logo .logo-decor .loader-transform.logo-decor-1 {
+    opacity: 1;
+    animation-name: animation-transform-left;
+    animation-timing-function: cubic-bezier(.34, .28, .26, .55);
+    animation-duration: 3.2s;
+    animation-delay: 2.2s;
+}
+
+@keyframes animation-transform-left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-36deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 .introduce-us__logo .logo-decor .logo-decor-2 {
     transition: all 0.4s ease-in;
     transition-delay: 2s;
@@ -752,27 +817,45 @@ header ul.header-top > li:not(:last-child)::after {
 
 }
 
-.load-banner .introduce-us__logo .logo-decor .logo-decor-2 {
+.introduce-us__logo .logo-decor .logo-decor-2.loader-banner {
     animation-name: animation-decor-2;
-    animation-duration: 3.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    transform: rotate(8deg);
     opacity: 1;
+
+    animation-duration: 4.5s;
+    animation-timing-function: cubic-bezier(.33, .36, .86, .84);
 }
 
 @keyframes animation-decor-2 {
     0% {
-        transform: rotate(8deg);
-        opacity: 0.7;
+        transform: rotate(0deg);
     }
     50% {
-        transform: rotate(-5deg);
-        opacity: 0.7;
+        transform: rotate(-10deg);
     }
     100% {
-        transform: rotate(8deg);
-        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+.introduce-us__logo .logo-decor .loader-transform.logo-decor-2 {
+    opacity: 1;
+    animation-name: animation-transform-right;
+    animation-timing-function: cubic-bezier(.34, .28, .26, .55);
+    animation-duration: 3.2s;
+    animation-delay: 2.2s;
+}
+
+@keyframes animation-transform-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(36deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
 
@@ -781,8 +864,6 @@ header ul.header-top > li:not(:last-child)::after {
     transition: all 0.4s ease-in;
     transition-delay: 2.5s;
     opacity: 0;
-
-
 }
 
 .load-banner .introduce-us__logo .logo-decor .logo-decor-3 {
@@ -1029,7 +1110,8 @@ header ul.header-top > li:not(:last-child)::after {
     .load-banner .introduce--us__arrow .arrow-item:nth-child(5) {
         right: 100px;
     }
-    .introduce-us__logo .logo-decor .logo-decor-4{
+
+    .introduce-us__logo .logo-decor .logo-decor-4 {
         padding: 60px;
     }
 
@@ -1065,6 +1147,7 @@ header ul.header-top > li:not(:last-child)::after {
     .introduce-us__heading .image-6 {
         width: 200px;
     }
+
     .introduce-us__logo .logo-decor .logo-decor-4 {
         padding: 35px;
     }
