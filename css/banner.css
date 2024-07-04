@@ -501,24 +501,24 @@ header ul.header-top > li:not(:last-child)::after {
 
 
 .introduce-us__heading .image-4 {
-    transition-delay: 3.4s;
+    transition-delay: 3.2s;
     opacity: 0;
 }
 
 .load-banner .introduce-us__heading .image-4 {
     opacity: 1;
     animation-name: text-zoom;
-    animation-timing-function: ease-in;
+    animation-timing-function:cubic-bezier(.37,.49,.72,.66);
     animation-duration: 0.95s;
-    animation-delay: 2.8s;
+    animation-delay: 2.6s;
 }
 
 @keyframes text-zoom {
     0% {
         transform: scale(1);
     }
-    90% {
-        transform: scale(1.05);
+    95% {
+        transform: scale(1.07);
     }
     100% {
         transform: scale(1);
@@ -533,15 +533,15 @@ header ul.header-top > li:not(:last-child)::after {
 .load-banner .introduce-us__heading .image-6 {
     opacity: 1;
     animation-name: text-right;
-    animation-timing-function: ease-in-out;
+    animation-timing-function:cubic-bezier(.38,.46,.78,.64);
     animation-duration: 1.2s;
     animation-delay: 2.6s;
 }
 
 @keyframes text-right {
 
-    50% {
-        transform: translateX(-10px);
+    30% {
+        transform: translateX(-15px);
     }
     80% {
         transform: translateX(30px);
