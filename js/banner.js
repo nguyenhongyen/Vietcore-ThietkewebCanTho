@@ -55,7 +55,7 @@
 				$('.loader-transform.logo-decor-1').removeClass('loader-transform').addClass('loader-banner');
 				$('.loader-transform.logo-decor-2').removeClass('loader-transform').addClass('loader-banner');
 
-			}, 5400);
+			}, 5200);
 
 		})
 

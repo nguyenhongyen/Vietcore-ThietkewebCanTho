@@ -467,7 +467,7 @@ header ul.header-top > li:not(:last-child)::after {
         animation-duration: 1s;
     }
     80% {
-        transform: translateY(10px);
+        transform: translateY(12px);
     }
 
     100% {
@@ -789,7 +789,7 @@ header ul.header-top > li:not(:last-child)::after {
     animation-name: animation-transform-left;
  /*   animation-timing-function: cubic-bezier(.34, .28, .26, .55);*/
     animation-timing-function:cubic-bezier(.33, .36, .86, .84);
-    animation-duration: 3.2s;
+    animation-duration: 3s;
     animation-delay: 2.2s;
 }
 
@@ -840,7 +840,7 @@ header ul.header-top > li:not(:last-child)::after {
     animation-name: animation-transform-right;
   /*  animation-timing-function: cubic-bezier(.34, .28, .26, .55);*/
     animation-timing-function:cubic-bezier(.33, .36, .86, .84);
-    animation-duration: 3.2s;
+    animation-duration: 3s;
     animation-delay: 2.2s;
 }
 
@@ -996,6 +996,22 @@ header ul.header-top > li:not(:last-child)::after {
 .load-banner .introduce-us__bg-1 .bg-1__decor img,
 .load-banner .introduce-us__bg-2 .bg-2__decor img {
     opacity: 0.7;
+}
+.introduce-us__heading .image-1 img{
+    width: 276px;
+    height: 50px;
+}
+.introduce-us__heading .image-2 img{
+    width: 407px;
+    height: 50px;
+}
+.introduce-us__heading .image-3{
+    width:67px;
+    height: 24px;
+}
+.introduce-us__heading .image-4{
+    width:623px;
+    height: 71px;
 }
 
 @media (max-width: 1300px) {
